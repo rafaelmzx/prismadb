@@ -1,0 +1,17 @@
+
+
+GET http://localhost:3333
+
+
+{
+    "name": "testerest",
+    "email": "testerest@gmail.com"
+}
+
+POST http://localhost:3333/post/1
+Content-Type: : application/json
+
+{
+    "title": "post express",
+    "content": "post express"
+}
