@@ -42,15 +42,15 @@ async function main() {
     //     }
     // })
 
-    await prisma.user.update({
-        where: {
-            id: 5
-        },
-        data:{
-            name: "Claudio",
-            email: "claudio@gmail.com"
-        }
-    })
+    // await prisma.user.update({
+    //     where: {
+    //         id: 5
+    //     },
+    //     data:{
+    //         name: "Claudio",
+    //         email: "claudio@gmail.com"
+    //     }
+    // })
 }
 
 

@@ -3,15 +3,45 @@
 GET http://localhost:3333
 
 
-{
-    "name": "testerest",
-    "email": "testerest@gmail.com"
-}
-
-POST http://localhost:3333/post/1
-Content-Type: : application/json
+###
+POST http://localhost:3333/cars/register
+content-Type: application/json
 
 {
-    "title": "post express",
-    "content": "post express"
+    "avaible": "Sim",
+    "hireCar": "Disponivel para alugar",
+    "modelCar": "Gol",
+    "colorCar": "Branco",
+    "fabCar": "Volkswagem"
 }
+
+###
+POST http://localhost:3333/client/register
+content-Type: application/json
+
+{
+    "name": "teste2",
+    "email": "testedelete@gmail.com",
+    "CPF": "000.000.000-01",
+    "CEP": "98960000",
+    "numberPhone": "55 01234-5678"
+}
+
+###
+
+DELETE http://localhost:3333/client/2
+
+###
+
+PUT http://localhost:3333/client/1
+content-Type: application/json
+
+{
+    "name": "teste4",
+    "email": "testeupdate@gmail.com",
+    "CPF": "000.000.000-03",
+    "CEP": "98960006",
+    "numberPhone": "55 01234-5679"
+}
+
+###
